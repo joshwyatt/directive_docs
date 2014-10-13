@@ -1,7 +1,10 @@
 function myCustomer(){
   return {
     restrict: 'E',
-    templateUrl: 'my-customer.html'
+    scope: {
+      customerInfo: '=info'
+    },
+    templateUrl: 'my-customer-iso.html'
   };
 }
 

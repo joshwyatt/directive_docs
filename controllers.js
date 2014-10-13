@@ -1,9 +1,13 @@
 function ControllerOne(){
   var vm = this;
 
-  vm.customer = {
+  vm.rohan = {
     name: 'Rohan',
     address: '1334 Moon'
+  };
+  vm.josh = {
+    name: 'Josh',
+    address: 'Cali'
   };
 }
 
