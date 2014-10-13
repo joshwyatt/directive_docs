@@ -1,5 +1,6 @@
 function myCustomer(){
   return {
+    restrict: 'E',
     templateUrl: 'my-customer.html'
   };
 }
