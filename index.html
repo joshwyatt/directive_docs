@@ -5,10 +5,14 @@
     <script src="lib/angular/angular.js"></script>
   </head>
 
-  <body ng-controller="testController as test">
-    <h3>Testing: {{test.test}}</h3>
+  <body>
+
+    <div ng-controller="ControllerOne as one">
+      <div my-customer></div>
+    </div>
 
     <script src="app.js"></script>
     <script src="controllers.js"></script>
+    <script src="directives.js"></script>
   </body>
 </html>

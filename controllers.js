@@ -1,8 +1,12 @@
-function testController(){
+function ControllerOne(){
   var vm = this;
-  vm.test = 'One Two One Two'
+
+  vm.customer = {
+    name: 'Rohan',
+    address: '1334 Moon'
+  };
 }
 
-angular.module('controllers', [])
+angular.module('controllers', ['directives'])
 
-.controller('testController', testController)
+.controller('ControllerOne', ControllerOne)
