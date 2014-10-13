@@ -1,6 +1,6 @@
 function myCustomer(){
   return {
-    template: 'Name: {{ one.customer.name }} Address: {{ one.customer.address }}'
+    templateUrl: 'my-customer.html'
   };
 }
 
