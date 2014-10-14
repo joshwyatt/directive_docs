@@ -12,6 +12,22 @@
       <hr>
       <my-customer info="one.josh"></my-customer>
     </div>
+    <hr>
+    <div ng-controller="ControllerTwo as two">
+      <my-test-directive dialogue="two.war"></my-test-directive>
+      <hr>
+      <my-test-directive dialogue="two.peace"></my-test-directive>
+    </div>
+    <hr>
+
+    <div ng-controller="ControllerThree as three">
+      Date format: <input ng-model="three.format"><hr/>
+      Current time is: <span my-current-time="three.format"></span>
+      <br>
+    <div ng-controller="ControllerThree as three">
+      <input ng-model="three.friend"><br>
+      One of my friends is <span all-my-friends="three.friend"></span>
+    </div>
 
     <script src="app.js"></script>
     <script src="controllers.js"></script>
