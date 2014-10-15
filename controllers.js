@@ -35,8 +35,15 @@ function ControllerThree(){
   vm.test = 'test';
 }
 
+function TransclusionController(){
+  var vm = this;
+
+  vm.name = 'josh';
+}
+
 angular.module('controllers', ['directives'])
 
 .controller('ControllerOne', ControllerOne)
 .controller('ControllerTwo', ControllerTwo)
 .controller('ControllerThree', ControllerThree)
+.controller('TransclusionController', TransclusionController)

@@ -74,7 +74,13 @@ function myFriend($interval){
   }
 }
 
-
+function myDialogue(){
+  return {
+    restrict: 'E',
+    transclude: 'true',
+    templateUrl: 'my-dialogue.html'
+  }
+}
 
 angular.module('directives', [])
 
@@ -82,6 +88,7 @@ angular.module('directives', [])
 .directive('myTestDirective', myTestDirective)
 .directive('myCurrentTime', myCurrentTime)
 .directive('myFriend', myFriend)
+.directive('myDialogue', myDialogue)
 
 // function allMyFriends($interval){
 

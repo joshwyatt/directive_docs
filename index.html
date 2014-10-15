@@ -23,12 +23,15 @@
     <div ng-controller="ControllerThree as three">
       Date format: <input ng-model="three.format"><hr/>
       Current time is: <span my-current-time="three.format"></span>
-      <br>
+      <hr>
       friend input: <input ng-model="three.friend">
       test input: <input ng-model="three.test">
       And the winner is: <span my-friend="three.friend" test-attr="three.test"></span>
     </div>
-    <br>
+    <hr>
+    <div ng-controller="TransclusionController as trans">
+      <my-dialogue>Check out the content: {{ trans.name }}</my-dialogue>
+    </div>
 
 
     <script src="app.js"></script>
