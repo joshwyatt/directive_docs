@@ -32,6 +32,7 @@ function ControllerThree(){
 
   vm.friends = ['Liz', 'Drew', 'Bonnie', 'Rachael', 'Mark'];
   vm.friend = 'Ray';
+  vm.test = 'test';
 }
 
 angular.module('controllers', ['directives'])

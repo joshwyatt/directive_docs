@@ -50,11 +50,23 @@ function myCurrentTime($interval, dateFilter){
 
 function myFriend($interval){
   function link(scope, element, attrs){
+    var test;
     var friend;
+
+    function changeText(txt){
+      element.text(txt);
+    }
+
     scope.$watch(attrs.myFriend, function(name){
       friend = name;
-      element.text(friend);
-    })
+      changeText(friend);
+    });
+
+    scope.$watch(attrs.testAttr, function(txt){
+      test = txt;
+      changeText(test);
+    });
+
   }
 
   return {
