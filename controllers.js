@@ -30,7 +30,8 @@ function ControllerThree(){
 
   vm.format = 'M/d/yy h:mm:ss a';
 
-  vm.friend = 'Liz';
+  vm.friends = ['Liz', 'Drew', 'Bonnie', 'Rachael', 'Mark'];
+  vm.friend = 'Ray';
 }
 
 angular.module('controllers', ['directives'])

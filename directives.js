@@ -21,7 +21,7 @@ function myTestDirective(){
 function myCurrentTime($interval, dateFilter){
 
   function link(scope, element, attrs){
-    
+
     var format,
         timeoutId;
     
@@ -48,33 +48,18 @@ function myCurrentTime($interval, dateFilter){
   };
 }
 
-function allMyFriends($interval){
-
+function myFriend($interval){
   function link(scope, element, attrs){
-    var ticker,
-        friend;
-
-    function showFriend(){
-      element.text(friend);
-    }
-
-    scope.$watch(attrs.allMyFriends, function(name){
+    var friend;
+    scope.$watch(attrs.myFriend, function(name){
       friend = name;
-      showFriend();
+      element.text(friend);
     })
-
-    ticker = $interval(function(){
-      showFriend();
-    }, 1000);
-
-    element.on('destroy', function(){
-      $interval.cancel(ticker);
-    });
   }
 
   return {
     link: link
-  };
+  }
 }
 
 
@@ -84,7 +69,7 @@ angular.module('directives', [])
 .directive('myCustomer', myCustomer)
 .directive('myTestDirective', myTestDirective)
 .directive('myCurrentTime', myCurrentTime)
-.directive('allMyFriends', allMyFriends)
+.directive('myFriend', myFriend)
 
 // function allMyFriends($interval){
 
